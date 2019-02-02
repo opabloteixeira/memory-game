@@ -1,0 +1,24 @@
+.memory-card{
+	width: 155px;
+	height: 155px;
+	background-color: #f25a70;
+	border-radius: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+
+/*	position: relative; */
+}
+
+
+.memory-card > .icon{
+	width: 100px;
+	height: 100px;
+
+/*	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+*/
+}
