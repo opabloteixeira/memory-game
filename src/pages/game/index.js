@@ -3,8 +3,12 @@ const $root = document.querySelector("#root");
 
 const $cardsWrapper    = createCardsWrapper();
 
+//aplica todo o estilo que existe dentro da função e retorna apenas a função de criar cards
+const createMemoryCard = memoryCard();
+
 const $memoryCard      = createMemoryCard(
     { //retorna um json(objeto) para a função
+      //não importa a ordem, pois é um json
         src: "img/icon-collabcode.png",
         alt: "Um ícone do macote da Collabcode"
     }
