@@ -18,7 +18,6 @@ const $memoryCardC = createMemoryCard(
     {
         src: "img/icon-c.png", 
         alt: "Um icone da linguagem de programação C++",
-        className: "-front"
     }
 )
 
@@ -26,7 +25,6 @@ const $memoryCardJS = createMemoryCard(
     {
         src: "img/icon-js.png", 
         alt: "Um icone da linguagem de programação Javascript",
-        className: "-front"
     }
 )
 
@@ -34,7 +32,20 @@ const $memoryCardJava = createMemoryCard(
     {
         src: "img/icon-java.png", 
         alt: "Um icone da linguagem de programação Java",
-        className: "-front"
+    }
+)
+
+const $memoryCardWoman = createMemoryCard(
+    {
+        src: "img/icon-woman.png", 
+        alt: "Uma moça programando",
+    }
+)
+
+const $memoryCardPhp = createMemoryCard(
+    {
+        src: "img/icon-php.png", 
+        alt: "Livro de php",
     }
 )
 
@@ -43,10 +54,8 @@ const $memoryCardJava = createMemoryCard(
 
 $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJava);
 $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJS);
-$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCard);
-$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCard);
-$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCard);
-$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCard);
+$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardPhp);
+$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardWoman);
 
 
 $root.insertAdjacentElement("beforeend", $cardsWrapper);
