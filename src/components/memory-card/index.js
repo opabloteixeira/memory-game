@@ -78,7 +78,7 @@ function memoryCard(){
                     class='icon' 
                     src="${src}" 
                     alt="${alt}" 
-                    onClick="handleClick()"
+                
                 />
             </article>
             <article class="card">
@@ -86,12 +86,35 @@ function memoryCard(){
                     class='icon' 
                     src="img/icon-collabcode.png" 
                     alt="Mascote da collabcode" 
-                    onClick="handleClick()"
+                    
                 />
             </article>
         </div>
     `; 
 }
 const handleClick = $component => {
-    $component.classList.toggle("-active");
+
+    if (qntActiveMemoryCard < 2 ) {
+        $component.classList.toggle("-active");
+    }
+
+
+
+    console.log("fora: ", qntActiveMemoryCard);
+    if (qntActiveMemoryCard == 1) { 
+        setTimeout(() =>{
+            const $activeMemoryCards = document.querySelectorAll(".memory-card.-active");
+
+            $activeMemoryCards.forEach( $memoryCard =>{
+                $memoryCard.classList.remove("-active");
+            });
+
+            qntActiveMemoryCard = 0;
+        },1500 );
+    }
+
+
+
+
+    
 }
