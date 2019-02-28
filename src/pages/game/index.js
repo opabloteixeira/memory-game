@@ -1,3 +1,5 @@
+(function(){
+
 // a api do browser retorna um ELEMENTO sempre
 const $root = document.querySelector("#root");
 
@@ -87,5 +89,5 @@ $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardPhp);
 
 $root.insertAdjacentElement("beforeend", $cardsWrapper);
 
-
+})();
 
