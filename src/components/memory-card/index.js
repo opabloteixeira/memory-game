@@ -13,11 +13,11 @@ function memoryCard(){
         }
 
 
-        .memory-card.-active .card{
+        .memory-card.-active .card, .memory-card.-score .card{
             display: none;
         }
         
-        .memory-card.-active .card.-front{
+        .memory-card.-active .card.-front, .memory-card.-score .card.-front{
             display: flex;
         }
 
@@ -92,29 +92,45 @@ function memoryCard(){
         </div>
     `; 
 }
+
+let score = 0;
 const handleClick = $component => {
+    if(!$component.classList.contains("-active")){
 
-    if (qntActiveMemoryCard < 2 ) {
-        $component.classList.toggle("-active");
-    }
+        if (qntActiveMemoryCard < 2 ) {
+            $component.classList.add("-active");
+        }
 
 
+        if (qntActiveMemoryCard == 1) { 
 
-    console.log("fora: ", qntActiveMemoryCard);
-    if (qntActiveMemoryCard == 1) { 
-        setTimeout(() =>{
             const $activeMemoryCards = document.querySelectorAll(".memory-card.-active");
 
-            $activeMemoryCards.forEach( $memoryCard =>{
-                $memoryCard.classList.remove("-active");
-            });
+            if (
+                $activeMemoryCards[0].querySelector(".-front .icon").getAttribute("src") == 
+                $activeMemoryCards[1].querySelector(".-front .icon").getAttribute("src")
+                ) {
+                score++;
+                console.log(score);
+                
+                $activeMemoryCards.forEach($memoryCard => {
+                    $memoryCard.classList.add("-score");
+                    $memoryCard.classList.remove("-active");
+                })
+            }
 
-            qntActiveMemoryCard = 0;
-        },1500 );
+            
+            
+
+            setTimeout(() =>{
+                $activeMemoryCards = document.querySelectorAll(".memory-card.-active");
+
+                $activeMemoryCards.forEach( $memoryCard =>{
+                    $memoryCard.classList.remove("-active");
+                });
+
+                qntActiveMemoryCard = 0;
+            },1500 );
+        }
     }
-
-
-
-
-    
 }

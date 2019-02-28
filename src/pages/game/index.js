@@ -14,48 +14,75 @@ const $memoryCard      = createMemoryCard(
     }
 )
 
-const $memoryCardC = createMemoryCard(
-    {
+const $memoryCardC = createMemoryCard({
         src: "img/icon-c.png", 
         alt: "Um icone da linguagem de programação C++",
     }
 )
 
-const $memoryCardJS = createMemoryCard(
-    {
+const $memoryCardJs = createMemoryCard({
         src: "img/icon-js.png", 
         alt: "Um icone da linguagem de programação Javascript",
     }
 )
 
-const $memoryCardJava = createMemoryCard(
-    {
+const $memoryCardJava = createMemoryCard({
         src: "img/icon-java.png", 
         alt: "Um icone da linguagem de programação Java",
     }
 )
 
-const $memoryCardWoman = createMemoryCard(
-    {
+const $memoryCardWoman = createMemoryCard({
         src: "img/icon-woman.png", 
         alt: "Uma moça programando",
     }
 )
 
-const $memoryCardPhp = createMemoryCard(
-    {
+const $memoryCardPhp = createMemoryCard({
         src: "img/icon-php.png", 
         alt: "Livro de php",
+    }
+)
+
+const $memoryCardHead= createMemoryCard({
+        src: "img/icon-head.png", 
+        alt: "Ícone de uma tag html",
+    }
+)
+const $memoryCardMobile= createMemoryCard({
+        src: "img/icon-mobile.png", 
+        alt: "Ícone de um celular",
+    }
+)
+const $memoryCardBug= createMemoryCard({
+        src: "img/icon-bug.png", 
+        alt: "Ícone de uma barata, significa erro",
+    }
+)
+const $memoryCardResponsivo= createMemoryCard({
+        src: "img/icon-responsive.png", 
+        alt: "Ícone sobre responsividade",
+    }
+)
+const $memoryCardSettings= createMemoryCard({
+        src: "img/icon-settings.png", 
+        alt: "Ícone sobre comfigurações",
     }
 )
 
 
 
 
-$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJava);
-$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJS);
+//$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJava);
+$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJs);
 $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardPhp);
 $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardWoman);
+$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardSettings);
+$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardSettings);
+$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardWoman);
+$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJs);
+$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardPhp);
+//$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJava);
 
 
 $root.insertAdjacentElement("beforeend", $cardsWrapper);
