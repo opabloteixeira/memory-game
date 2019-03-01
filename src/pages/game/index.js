@@ -3,10 +3,22 @@
 // a api do browser retorna um ELEMENTO sempre
 const $root = document.querySelector("#root");
 
+//chama wrapper
 const $cardsWrapper    = createCardsWrapper();
 
 //aplica todo o estilo que existe dentro da função e retorna apenas a função de criar cards
 const createMemoryCard = memoryCard.create();
+
+
+
+
+
+
+
+
+
+
+
 
 const $memoryCard      = createMemoryCard(
     { //retorna um json(objeto) para a função
@@ -86,6 +98,9 @@ $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJs);
 $cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardPhp);
 //$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJava);
 
+//insere a point bar
+const $insertPointBar = pointBar.create(); 
+$root.insertAdjacentHTML("beforeend", $insertPointBar);
 
 $root.insertAdjacentElement("beforeend", $cardsWrapper);
 
