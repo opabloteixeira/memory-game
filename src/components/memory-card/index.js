@@ -131,7 +131,8 @@
                 ) {
 
                 store.score++;
-
+                
+                document.querySelector(".point-bar > .number").textContent = store.score;
                 console.log(store.score);
                 
                 $activeMemoryCards.forEach($memoryCard => {

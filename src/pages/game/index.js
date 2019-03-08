@@ -11,7 +11,7 @@ const createMemoryCard = memoryCard.create();
 
 
 
-
+const $gameButton = gameButton.render();
 
 
 
@@ -88,21 +88,28 @@ const $memoryCardSettings= createMemoryCard({
 
 
 //$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJava);
-$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJs);
-$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardPhp);
-$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardWoman);
-$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardSettings);
-$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardSettings);
-$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardWoman);
-$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJs);
-$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardPhp);
+$cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardJs);
+$cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardPhp);
+$cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardWoman);
+$cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardSettings);
+$cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardSettings);
+$cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardWoman);
+$cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardJs);
+$cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardPhp);
 //$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJava);
+
+
+//add o box dos cards
+$root.insertAdjacentElement("afterbegin", $cardsWrapper);
 
 //insere a point bar
 const $insertPointBar = pointBar.create(); 
-$root.insertAdjacentHTML("beforeend", $insertPointBar);
+$root.insertAdjacentHTML("afterbegin", $insertPointBar);
 
-$root.insertAdjacentElement("beforeend", $cardsWrapper);
+//insere o botão start
+$root.insertAdjacentHTML("beforeend", $gameButton);
+
+
 
 })();
 
