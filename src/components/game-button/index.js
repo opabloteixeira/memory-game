@@ -24,24 +24,26 @@ const gameButton = (function(){
                 cursor:pointer;
                 font-size: 1.05em;
                 box-shadow: 0px 4px 8px #3a4042;
-                
             }
 
         `;
         $head.insertBefore($style, null);
     };
 
+    module.handleClick = $component => {
+        $component.remove();
+        document.querySelector(".transparency-layer").remove();
+    }
 
-
-    module.render = () =>{
+    module.render = $component => {
         module.style();
         return `
-            <button class="game-button">Start</button>
+            <button class="game-button">${$component}</button>
         `;
     };
 
-
     return {
-        render: module.render 
+        render: module.render,
+        handleClick: module.handleClick
     };
 })();

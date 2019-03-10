@@ -23,8 +23,6 @@ const pointBar = (function(){
         `;
 
         $head.insertBefore($style, null);
-
-        console.log($style);
     }
 
     module.create = () => {

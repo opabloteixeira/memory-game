@@ -9,12 +9,9 @@ const $cardsWrapper    = createCardsWrapper();
 //aplica todo o estilo que existe dentro da função e retorna apenas a função de criar cards
 const createMemoryCard = memoryCard.create();
 
+const $insertPointBar = pointBar.create(); 
 
-
-const $gameButton = gameButton.render();
-
-
-
+const $layerStart = layerStart.render("Start");
 
 
 
@@ -22,94 +19,93 @@ const $gameButton = gameButton.render();
 
 const $memoryCard      = createMemoryCard(
     { //retorna um json(objeto) para a função
-      //não importa a ordem, pois é um json
+        //não importa a ordem, pois é um json
         src: "img/icon-collabcode.png",
         alt: "Um ícone do macote da Collabcode"
     }
-)
-
-const $memoryCardC = createMemoryCard({
+    )
+    
+    const $memoryCardC = createMemoryCard({
         src: "img/icon-c.png", 
         alt: "Um icone da linguagem de programação C++",
     }
-)
-
-const $memoryCardJs = createMemoryCard({
+    )
+    
+    const $memoryCardJs = createMemoryCard({
         src: "img/icon-js.png", 
         alt: "Um icone da linguagem de programação Javascript",
     }
-)
-
-const $memoryCardJava = createMemoryCard({
+    )
+    
+    const $memoryCardJava = createMemoryCard({
         src: "img/icon-java.png", 
         alt: "Um icone da linguagem de programação Java",
     }
-)
-
-const $memoryCardWoman = createMemoryCard({
+    )
+    
+    const $memoryCardWoman = createMemoryCard({
         src: "img/icon-woman.png", 
         alt: "Uma moça programando",
     }
-)
-
-const $memoryCardPhp = createMemoryCard({
+    )
+    
+    const $memoryCardPhp = createMemoryCard({
         src: "img/icon-php.png", 
         alt: "Livro de php",
     }
-)
+    )
 
 const $memoryCardHead= createMemoryCard({
-        src: "img/icon-head.png", 
-        alt: "Ícone de uma tag html",
-    }
+    src: "img/icon-head.png", 
+    alt: "Ícone de uma tag html",
+}
 )
 const $memoryCardMobile= createMemoryCard({
-        src: "img/icon-mobile.png", 
-        alt: "Ícone de um celular",
-    }
+    src: "img/icon-mobile.png", 
+    alt: "Ícone de um celular",
+}
 )
 const $memoryCardBug= createMemoryCard({
-        src: "img/icon-bug.png", 
-        alt: "Ícone de uma barata, significa erro",
+    src: "img/icon-bug.png", 
+    alt: "Ícone de uma barata, significa erro",
     }
-)
-const $memoryCardResponsivo= createMemoryCard({
+    )
+    const $memoryCardResponsivo= createMemoryCard({
         src: "img/icon-responsive.png", 
         alt: "Ícone sobre responsividade",
     }
-)
-const $memoryCardSettings= createMemoryCard({
+    )
+    const $memoryCardSettings= createMemoryCard({
         src: "img/icon-settings.png", 
         alt: "Ícone sobre comfigurações",
     }
-)
+    )
 
-
-
-
-//$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJava);
-$cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardJs);
-$cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardPhp);
-$cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardWoman);
-$cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardSettings);
-$cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardSettings);
-$cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardWoman);
-$cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardJs);
-$cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardPhp);
-//$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJava);
-
-
-//add o box dos cards
-$root.insertAdjacentElement("afterbegin", $cardsWrapper);
-
-//insere a point bar
-const $insertPointBar = pointBar.create(); 
-$root.insertAdjacentHTML("afterbegin", $insertPointBar);
-
-//insere o botão start
-$root.insertAdjacentHTML("beforeend", $gameButton);
-
-
+    
+    
+    
+    //$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJava);
+    $cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardJs);
+    $cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardPhp);
+    $cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardWoman);
+    $cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardSettings);
+    $cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardSettings);
+    $cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardWoman);
+    $cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardJs);
+    $cardsWrapper.insertAdjacentHTML("afterbegin", $memoryCardPhp);
+    //$cardsWrapper.insertAdjacentHTML("beforeend", $memoryCardJava);
+    
+    
+    //add o box dos cards
+    $root.insertAdjacentElement("afterbegin", $cardsWrapper);
+    
+    //insere a point bar
+    $root.insertAdjacentHTML("afterbegin", $insertPointBar);
+    
+    //insere layer e botão
+    $root.insertAdjacentHTML("beforeend", $layerStart);
+    
+    
 
 })();
 
