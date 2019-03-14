@@ -12,7 +12,7 @@ const transparencyLayer = (function(){
                 background-color: rgba(58,64,66, 0.5);
                 position: absolute;
                 width: 100vw;
-                height: 105vh;
+                height: 733px;
                 top: 0;
                 transition: opacity 300ms 200ms linear; 
             }
@@ -20,6 +20,7 @@ const transparencyLayer = (function(){
 
             .transparency-layer.-disable{
                 opacity: 0;
+                
             }
         `;
 
