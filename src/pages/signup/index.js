@@ -6,13 +6,16 @@
     const $signupButton= flatButton.render("sign up");
     const $logoGame    = logoGame.render();
     const $titleGame   = titleGame.render("welcome");
-    
     const $logoWrapper = logoWrapper.render($logoGame, $titleGame);
+    const $labelGame   = labelGame.render("E-mail");
+    const $inputGame   = inputGame.render();
 
 
     $root.insertAdjacentHTML("beforeend", $loginButton);
     $root.insertAdjacentHTML("beforeend", $signupButton);
     $root.insertAdjacentHTML("beforeend", $logoWrapper);
+    $root.insertAdjacentHTML("beforeend", $labelGame);
+    $root.insertAdjacentHTML("beforeend", $inputGame);
 
 
 })()

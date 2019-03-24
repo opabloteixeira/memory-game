@@ -3,7 +3,8 @@
 	padding: 0;
 } 
 
-button {
+button, a, input {
 	font-family: inherit;
 	border: 0;
+	box-sizing: border-box;
 }
