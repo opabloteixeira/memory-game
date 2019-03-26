@@ -10,6 +10,9 @@ const labelGame = (function(){
             .label-game {
                 color: #3a4042;
                 font-size: 16px;
+                display: block;
+                opacity: 0.5;
+
             }
         
         `;

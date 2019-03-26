@@ -16,6 +16,10 @@ const inputGame = (function(){
                 padding: 12px 0 12px 0;
                 width: 100%;
             }
+
+            .input-game + .label-game {
+                margin-top: 30px
+            }
         
         `;
 
