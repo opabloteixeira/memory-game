@@ -27,9 +27,9 @@ const inputGame = (function(){
         $head.insertAdjacentElement("beforeend", $style);
     }
 
-    module.render = () => {
+    module.render = (placeholder = "") => {
         module._style();
-        return `<input class="input-game" type="email"/>`;
+        return `<input class="input-game" type="text" placeholder=${placeholder}>`;
     }
 
 
