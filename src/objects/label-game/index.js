@@ -12,7 +12,6 @@ const labelGame = (function(){
                 font-size: 16px;
                 display: block;
                 opacity: 0.5;
-
             }
         
         `;
