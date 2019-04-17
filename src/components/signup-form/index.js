@@ -21,19 +21,18 @@ const signupForm = (function(){
 
     module._children = () => {
         const $labelEmail   = labelGame.render("E-mail");
-        const $inputEmail   = inputGame.render("seuemail@gmail.com");
+        const $inputEmail   = inputGame.render({"placeholder":"seuemail@gmail.com", "type":"email"});
     
         const $labelUsername= labelGame.render("Username");
-        const $inputUsername= inputGame.render("pablo85");
+        const $inputUsername= inputGame.render({"placeholder":"pablo85"});
     
         const $labelPassword= labelGame.render("Password");
-        const $inputPassword= inputGame.render("********");
+        const $inputPassword= inputGame.render({"placeholder":"********", "type":"password"});
     
         const $labelConfirmPassword = labelGame.render("Confirm Password");
-        const $inputConfirmPassword = inputGame.render("******");
+        const $inputConfirmPassword = inputGame.render({"placeholder":"********", "type":"password"});
 
         const $signupButton = signupButton.render("signup");
-
 
         return `${ $labelUsername + $inputUsername + $labelEmail + $inputEmail 
             + $labelPassword + $inputPassword + $labelConfirmPassword 

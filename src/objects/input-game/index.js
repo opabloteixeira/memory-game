@@ -27,9 +27,10 @@ const inputGame = (function(){
         $head.insertAdjacentElement("beforeend", $style);
     }
 
-    module.render = (placeholder = "") => {
+    module.render = ( props ) => {
+        const {type, placeholder} = props; //usando desestruturação 
         module._style();
-        return `<input class="input-game" type="text" placeholder=${placeholder}>`;
+        return `<input class="input-game" type="${type}" placeholder=${placeholder}>`;
     }
 
 
