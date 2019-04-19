@@ -119,7 +119,6 @@
             $component.classList.add("-active");
         }
     }
-
     const checkSure = () => {
         if (qntActiveMemoryCard == 1) { 
 
