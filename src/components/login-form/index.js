@@ -24,14 +24,16 @@ const loginForm = (function(){
         const $inputUsername = inputGame.render({"placeholder":"pablopst@gmail.com"});
     
         const $labelPassword = labelGame.render("Password");
-        const $inputPassword = inputGame.render({"placeholder":"********", "type":"password"});
+        const $inputPassword = inputGame.render({"placeholder":"digite a sua senha", "type":"password"});
+
+        const $eyeGame = eyeGame.render();
     
         const $signupButton = signupButton.render("login");
 
         const $linkLogin = linkGame.render({"href": "#" , "content": "Forget password ?"});
         
         return `${ $labelUsername + $inputUsername + 
-            $labelPassword + $inputPassword + $linkLogin + $signupButton} `;
+            $labelPassword + $inputPassword + $eyeGame + $linkLogin + $signupButton} `;
     }
 
 
