@@ -35,7 +35,11 @@ const flatButton = (function(){
         module._id++;
         module._style(active);
 
-        return `<a src="#" class="flat-button-${module._id}">${content}</a>`;
+        return `<a 
+                    onclick="${alert("clicou")}"
+                    src="#" 
+                    class="flat-button-${module._id}">${content}    
+                </a>`;
     }
 
     return{

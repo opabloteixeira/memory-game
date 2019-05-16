@@ -28,9 +28,17 @@ const inputGame = (function(){
     }
 
     module.render = ( props ) => {
-        const {type, placeholder} = props; //usando desestruturação 
+
+        const {id, type, placeholder} = props; //usando desestruturação 
+
         module._style();
-        return `<input class="input-game" type="${type}" placeholder=${placeholder}>`;
+
+        return `<input
+                    id="${id}"
+                    class="input-game" 
+                    type="${type}" 
+                    placeholder="${placeholder}">
+                `;
     }
 
 

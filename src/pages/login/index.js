@@ -1,4 +1,4 @@
-(function(){
+const login = (function(){
 
     const $root = document.querySelector("#root");
 
@@ -16,4 +16,4 @@
     $root.insertAdjacentHTML("beforeend", $logoWrapper);
     $root.insertAdjacentHTML("beforeend", $loginForm);
 
-})(); 
+}); 

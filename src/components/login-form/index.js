@@ -24,9 +24,9 @@ const loginForm = (function(){
         const $inputUsername = inputGame.render({"placeholder":"pablopst@gmail.com"});
     
         const $labelPassword = labelGame.render("Password");
-        const $inputPassword = inputGame.render({"placeholder":"digite a sua senha", "type":"password"});
+        const $inputPassword = inputGame.render({"id": "password","placeholder":"digite a sua senha", "type":"password"});
 
-        const $eyeGame = eyeGame.render();
+        const $eyeGame = eyeGame.render({attrFor: "password"});
     
         const $signupButton = signupButton.render("login");
 
