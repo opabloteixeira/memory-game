@@ -1,4 +1,4 @@
-const signupButton = (function(){
+const loginButton = (function(){
 
 const module = {}
 
@@ -7,7 +7,7 @@ module._style = () => {
     const $style = document.createElement("style");
 
     $style.textContent = `
-        .signup-button {
+        .login-button {
             height: 48px;
             border-radius: 24px;
             width: 100%;
@@ -17,7 +17,7 @@ module._style = () => {
             cursor: pointer;
         }
 
-        .input-game + .signup-button {
+        .input-game + .login-button {
             margin-top: 25px;
         }
     
@@ -27,14 +27,23 @@ module._style = () => {
     $head.insertAdjacentElement("beforeend", $style);
 }
 
+module.handleClick = (event, path = "") => {
+    event.preventDefault();
+    window.location.hash = `#/${path}`;
+}
 
-module.render = (content) => {
+module.render = ({content = "", path= ""}) => {
     module._style();
-    return `<input class="signup-button" type="submit" value=${content}>`
+    return `<input 
+                class="login-button" 
+                type="submit" 
+                value="${content}"
+                onclick="loginButton.handleClick(event, ${path})">`;
 }
 
 return {
     render: module.render,
+    handleClick: module.handleClick
 }
 
 })();

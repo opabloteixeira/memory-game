@@ -28,12 +28,12 @@ const loginForm = (function(){
 
         const $eyeGame = eyeGame.render({attrFor: "password"});
     
-        const $signupButton = signupButton.render("login");
+        const $loginButton = loginButton.render({content: "login", path: "game"});
 
         const $linkLogin = linkGame.render({"href": "#" , "content": "Forget password ?"});
         
         return `${ $labelUsername + $inputUsername + 
-            $labelPassword + $inputPassword + $eyeGame + $linkLogin + $signupButton} `;
+            $labelPassword + $inputPassword + $eyeGame + $linkLogin + $loginButton} `;
     }
 
 

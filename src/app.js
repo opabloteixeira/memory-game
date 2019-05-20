@@ -1,16 +1,28 @@
 (function () {
 
-    signup();
-    // const {hash} = window.location;
-    // const paths = [];
+    const {hash} = window.location;
     
-    // paths[""] = login;
-    // paths["#/signup"] = signup;
+    console.log(hash);
+    
+    const paths = [];
+
+    paths[""] = login;
+    paths["#/login"] = login;
+    paths["#/signup"] = signup;
+    
+    paths[hash]();
+
+
+    // if (hash === "#/signup")
+    // signup();
+    
+    // if (hash === "#/login")
+    // login();
+
 
 
     //console.log(paths);
 
 
-    //paths[hash]();
 
 })();

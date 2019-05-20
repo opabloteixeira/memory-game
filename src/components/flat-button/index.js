@@ -19,7 +19,6 @@ const flatButton = (function(){
                 font-weight: bold;
                 width: 50%;
                 height: 176px;
-                padding-top: 60px;
                 text-align: center;
                 text-transform: uppercase;
                 border: none;
@@ -30,20 +29,23 @@ const flatButton = (function(){
 
         $head.insertAdjacentElement("beforeend", $style);
     }
+    module.handleClick = (path) => {
+        window.location.hash = `#/${path}`;
+    }
 
-    module.render = (content = "", active = false) => {
+    module.render = (content = "", active = false, path = "") => {
         module._id++;
         module._style(active);
 
-        return `<a 
-                
-                    src="#" 
-                    class="flat-button-${module._id}">${content}    
-                </a>`;
+        return `<button 
+                    onclick="flatButton.handleClick('${path}')" 
+                    class="flat-button-${module._id}">${content}
+                </button>`;
     }
 
     return{
         render: module.render,
+        handleClick: module.handleClick
     }
 
 })();

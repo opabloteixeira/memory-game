@@ -32,11 +32,11 @@ const signupForm = (function(){
         const $labelConfirmPassword = labelGame.render("Confirm Password");
         const $inputConfirmPassword = inputGame.render({"placeholder":"********", "type":"password"});
 
-        const $signupButton = signupButton.render("signup");
+        const $loginButton = loginButton.render({content: "signup", path: "login"});
 
         return `${ $labelUsername + $inputUsername + $labelEmail + $inputEmail 
             + $labelPassword + $inputPassword + $labelConfirmPassword 
-            + $inputConfirmPassword + $signupButton}`;
+            + $inputConfirmPassword + $loginButton}`;
     }
 
 

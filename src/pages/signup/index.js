@@ -2,10 +2,8 @@ const signup = (function(){
 
     const $root = document.querySelector("#root");
 
-
-
-    const $loginButton = flatButton.render("log in");
-    const $signupButton= flatButton.render("sign up", true);
+    const $loginButton = flatButton.render("log in", false, "login");
+    const $signupButton= flatButton.render("sign up", true, "signup");
     
     const $logoGame    = logoGame.render();
     const $titleGame   = titleGame.render("welcome");
