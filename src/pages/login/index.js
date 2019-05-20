@@ -3,7 +3,7 @@ const login = (function(){
     const $root = document.querySelector("#root");
 
     const $loginButton = flatButton.render("log in", true);
-    const $signupButton= flatButton.render("sign up");
+    const $signupButton= flatButton.render("sign up", false);
     
     const $logoGame    = logoGame.render();
     const $titleGame   = titleGame.render("hello");

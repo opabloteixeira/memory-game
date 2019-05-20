@@ -1,14 +1,16 @@
 (function () {
-    const {hash} = window.location;
-    const paths = [];
+
+    signup();
+    // const {hash} = window.location;
+    // const paths = [];
     
-    paths[""] = login;
-    paths["#/signup"] = signup;
+    // paths[""] = login;
+    // paths["#/signup"] = signup;
 
 
-    console.log(paths);
+    //console.log(paths);
 
 
-    paths[hash]();
+    //paths[hash]();
 
 })();
