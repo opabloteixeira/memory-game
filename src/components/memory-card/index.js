@@ -1,6 +1,6 @@
 //IIFE
 //vai retornar a function memoryCard que esta dentro do escopo
- const memoryCard = (function(){
+const memoryCard = (function(){
 
 
     const create = () => {

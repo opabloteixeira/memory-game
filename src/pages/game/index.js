@@ -1,4 +1,4 @@
-(function(){
+const game = (function(){
 
 // a api do browser retorna um ELEMENTO sempre
 const $root = document.querySelector("#root");
@@ -107,5 +107,5 @@ const $memoryCardBug= createMemoryCard({
     
     
 
-})();
+});
 
