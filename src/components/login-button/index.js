@@ -27,9 +27,11 @@ module._style = () => {
     $head.insertAdjacentElement("beforeend", $style);
 }
 
-module.handleClick = (event, path = "") => {
+module.handleClick = (event, path) => {
+
     event.preventDefault();
-    window.location.hash = `#/${path}`;
+    location.hash = `#/${path}`;
+    location.reload(true);
 }
 
 module.render = ({content = "", path= ""}) => {
@@ -38,7 +40,7 @@ module.render = ({content = "", path= ""}) => {
                 class="login-button" 
                 type="submit" 
                 value="${content}"
-                onclick="loginButton.handleClick(event, ${path})">`;
+                onclick="loginButton.handleClick(event, '${path}')">`;
 }
 
 return {
