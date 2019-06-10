@@ -30,7 +30,7 @@ module._style = () => {
 module.handleClick = (event, path) => {
 
     event.preventDefault();
-    location.hash = `#/${path}`;
+    location.hash = `#/${path}`; 
     location.reload(true);
 }
 
