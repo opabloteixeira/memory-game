@@ -9,7 +9,7 @@ const $cardsWrapper    = createCardsWrapper();
 //aplica todo o estilo que existe dentro da função e retorna apenas a função de criar cards
 const createMemoryCard = memoryCard.create();
 
-const $insertPointBar = pointBar.create(); 
+const $insertPointBar = pointBar.create("login"); 
 
 const $layerStart = layerStart.render("Start");
 
