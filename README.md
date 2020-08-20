@@ -2,7 +2,6 @@
 
 ![png1](git-imgs/memory-game01.png)
 ![png1](git-imgs/memory-game02.png)
-![png1](git-imgs/memory-game03.png)
 
 
 # Jogo da memória feito com JS puro
@@ -20,4 +19,4 @@
 
 - Pages cuida de como inserir os elementos na tela e passa as informações para os componentes. 
 
-- Callback: Chamada de retorno, função que só é executada quando ocorre uma ação (usuário clica)
+- Callback: Chamada de retorno, função que só é executada quando o![png1](git-imgs/memory-game03.png)
