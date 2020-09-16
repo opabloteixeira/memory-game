@@ -10,7 +10,7 @@
 
 
 
-# Informações
+# Informações.
 
 
 - Objects são elementos estruturais ou componentes muito simples.
