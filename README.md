@@ -6,7 +6,7 @@
 
 # Jogo da memória feito com JS puro
 ### Este jogo esta sendo desenvolvido com os padrões  ITCSS e RSCSS
-### Este game está em desenvolvimento, contém pequenos bugs ainda
+### Este game está em desenvolvimento, contém pequenos bugs ainda.
 
 
 
