@@ -13,7 +13,7 @@
 # Informações.
 
 
-- Objects são elementos estruturais ou componentes muito simples.
+- Objects são elementos estruturais ou componentes muito simples
 
 - Componentes são elementos separados em blocos que podem ser reutilizados. componentes stateless, componentes "burros"
 
