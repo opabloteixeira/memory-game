@@ -19,4 +19,4 @@
 
 - Pages cuida de como inserir os elementos na tela e passa as informações para os componentes
 
-- Callback: Chamada de retorno, função que só é executada quando ocorre uma ação (usuário clica)
+- Callback: Chamada de retorno, função que só é executada quando ocorre uma ação- usuário clica
